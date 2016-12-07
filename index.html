@@ -24,12 +24,8 @@
         mapDiv:"indoor3d",
         dim:"2d"
     }
-    var 3dParams = {
-        mapDiv:"indoor3d",
-        dim:"3d"
-    }
     var map = IndoorMap(params);
-    var 3dMap = IndoorMap(3dParams);
+   
     map.load('data/testMapData.json', function(){
         //map.setTheme(testTheme);
         map.showAreaNames(true).setSelectable(true);
@@ -37,14 +33,6 @@
         
         document.body.appendChild(ul);
         
-    });
-    3dMap.load('data/testMapData.json', function(){
-        //map.setTheme(testTheme);
-        3dMap.showAreaNames(true).setSelectable(true);
-        
-        var 3dUl = IndoorMap.getUI(3dMap);
-        
-        document.body.appendChild(3dUl);
     });
 
 </script>
