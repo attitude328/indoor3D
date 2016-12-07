@@ -22,11 +22,11 @@
 
     var params = {
         mapDiv:"indoor3d",
-        dim:"3d"
+        dim:"2d"
     }
     var map = IndoorMap(params);
    
-    map.load('data/北京-7-侨福芳草地购物中心.json', function(){
+    map.load('data/深圳-437-港隆城购物中心.json', function(){
         //map.setTheme(testTheme);
         map.showAreaNames(true).setSelectable(true);
         var ul = IndoorMap.getUI(map);
