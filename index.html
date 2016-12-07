@@ -34,8 +34,16 @@
         //map.setTheme(testTheme);
         map.showAreaNames(true).setSelectable(true);
         var ul = IndoorMap.getUI(map);
-        var 3dUl = IndoorMap.getUI(3dMap);
+        
         document.body.appendChild(ul);
+        
+    });
+    3dMap.load('data/testMapData.json', function(){
+        //map.setTheme(testTheme);
+        3dMap.showAreaNames(true).setSelectable(true);
+        
+        var 3dUl = IndoorMap.getUI(3dMap);
+        
         document.body.appendChild(3dUl);
     });
 
